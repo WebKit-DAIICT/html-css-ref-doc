@@ -4,17 +4,13 @@ Reference Doc
 
 #### CSS
 ```css
-.my-element {
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
 
-	html, body {
-	    height: 100%;
-	    box-sizing: border-box;
-	}
-	
-	*, *:before, *:after {
-	    box-sizing: inherit;
-	}
-	
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 ```
 
@@ -55,6 +51,65 @@ Reference Doc
 	margin: 20px;
 }
 ```
+-------
+## Fixed Positioning
+
+#### HTML
+```html
+<div class="sidebar">
+	This element's position is fixed and is stacked on the left side, with a width of 30%.
+</div>
+<div class="main-content">
+	This element's position is fixed and is stacked on the right side, with a width of 70%.
+</div>
+```
+
+#### CSS
+```css
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 30%;
+}
+
+.main-content {
+	position: fixed;
+	top: 0;
+	left: 30%;
+	bottom: 0;
+	width: 70%;
+}
+```
+## Absolute Positioning
+
+#### HTML
+```html
+<div class="parent">
+	<div class="child">
+	</div>
+</div>
+```
+
+#### CSS
+```css
+.parent {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.child {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	right: 100px;
+	height: 250px;
+}
+```
+----
+
 ----
 ## Background Image
 
