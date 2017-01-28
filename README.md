@@ -111,7 +111,7 @@ html, body {
 ----
 
 ----
-## Background Image
+## Border Radius
 
 #### HTML
 ```html
